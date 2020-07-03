@@ -1,0 +1,175 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+</style>
+
+	{% block content %}
+		<br><br>
+		<div class="mb-5">
+		  <div class="row align-items-start job-item border-bottom pb-3 mb-3 pt-3">
+		    <div class="col-md-2">
+		      <a href="{% url 'store:distributorsform' %}"><img src="{% static 'images/6.png' %}" alt=" " class="img-responsive"></a>
+		    </div>
+		    <div class="col-md-4">
+		      <span class="badge badge-primary px-2 py-1 mb-3">portion</span>
+		      <h2><a href="{% url 'store:distributorsform' %}">portion Chicken at request</a> </h2>
+		      <p class="meta">Publisher: <strong>Dalla</strong> In: <strong>limpopo</strong></p>
+		      <p class="meta">telephone: <strong>0658444792</strong></p>
+		      <p class="meta">Email: <strong>info@rl.com</strong></p>
+		    </div>
+		    <div class="col-md-3 text-left">
+		      <h3>Polokwane</h3>
+		      <span class="meta">243 Thabo Mbeki</span>
+		    </div>
+		    <div class="col-md-3 text-md-right">
+		      <button class="button button1"><strong class="text-black"><a href="{% url 'store:distributorsform' %}">Request Chicken Products</a></strong></button>
+		    </div>
+		  </div>
+		  <br><br>
+
+		  <div class="row align-items-start job-item border-bottom pb-3 mb-3 pt-3">
+		    <div class="col-md-2">
+		      <a  href="{% url 'store:distributorsform' %}"><img src="{% static 'images/7.png' %}" alt=" " class="img-responsive"></a>
+		    </div>
+		    <div class="col-md-4">
+		      <span class="badge badge-success px-2 py-1 mb-3">Live Chicken</span>
+		      <h2><a href="{% url 'store:distributorsform' %}">Bulk and non-Bulk stock</a> </h2>
+		      <p class="meta">Publisher: <strong>Dalla</strong> In: <strong>limpopo</strong></p>
+		      <p class="meta">telephone: <strong>0658444792</strong></p>
+		      <p class="meta">Email: <strong>info@rl.com</strong></p>
+		    </div>
+		    <div class="col-md-3 text-left">
+		      <h3>CBD</h3>
+		      <span class="meta">434, newtown Junction, coner verd</span>
+		    </div>
+		    <div class="col-md-3 text-md-right">
+		      <button class="button button1"><strong class="text-black"><a href="{% url 'store:distributorsform' %}">Request Chicken Products</a></strong></button>
+		    </div>
+		  </div>
+		  <br><br>
+		</div>
+
+		<div class="row pagination-wrap">
+		  
+		  <div class="col-md-6 text-center text-md-left">
+		    <div class="custom-pagination ml-auto">
+		      <a href="#" class="prev">Previous</a>
+		      <div class="d-inline-block">
+		        <a href="#" class="active">1</a>
+		        <a href="#">2</a>
+		        <a href="#">3</a>
+		        <a href="#">4</a>
+		      </div>
+		      <a href="#" class="next">Next</a>
+		    </div>
+		  </div>
+		</div>
+
+		</div>
+    </section>
+
+	{% endblock %}
+<script src="js/bootstrap.min.js"></script>
+<!-- top-header and slider -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<script src="js/minicart.min.js"></script>
+<script>
+	// Mini Cart
+	paypal.minicart.render({
+		action: '#'
+	});
+
+	if (~window.location.search.indexOf('reset=true')) {
+		paypal.minicart.reset();
+	}
+</script>
+<!-- main slider-banner -->
+<script src="js/skdslider.min.js"></script>
+<link href="css/skdslider.css" rel="stylesheet">
+<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('#demo1').skdslider({'delay':5000, 'animationSpeed': 2000,'showNextPrev':true,'showPlayButton':true,'autoSlide':true,'animationType':'fading'});
+						
+			jQuery('#responsive').change(function(){
+			  $('#responsive_wrapper').width(jQuery(this).val());
+			});
+			
+		});
+</script>	
+<!-- //main slider-banner --> 

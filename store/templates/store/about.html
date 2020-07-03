@@ -1,0 +1,254 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+   <div id="banner-area" class="banner-area" style="background-image:url('{% static 'images/banner/bn.jpg' %}')">
+      <div class="banner-text">
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-12">
+                  <div class="banner-heading">
+                     <h1 class="banner-title">About Us</h1>
+                     <ol class="breadcrumb">
+                        <li>Home</li>
+                        <li>Company</li>
+                        <li><a href="#">About Us</a></li>
+                     </ol>
+                  </div>
+               </div><!-- Col end -->
+            </div><!-- Row end -->
+         </div><!-- Container end -->
+      </div><!-- Banner text end -->
+   </div><!-- Banner area end --> 
+
+
+   <section id="main-container" class="main-container">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <h3 class="column-title">Who We Are</h3>
+               <p>BLK HORIZON Pty Ltd is a young, black and 100% wholly owned company. It was first registered and conceptualized in 2012 for the research and development of bio-diesel and green fuel products, to be utilized in the primary and secondary sector markets of South Africa. Over these eight years it has diversified its interest into three main markets being Hospitality, Logistics and Mining supplies services around the Mpumalanga and Gauteng Provinces.</p>
+
+               <blockquote><p>Investments in key businesses in line with these 3 categories has allowed BLK to slowly etch its way in these constantly changing markets.</p></blockquote>
+               <p>BLK HORIZON aims to solidify itself in Hospitality, Logistics and Mining supplies services sectors over the next 5 years. As well as, gradually etch out a proper existence for itself in the same arm of developing other black owned enterprises in key partnerships and financial/resource support of their businesses. Exercising the fact that together we can do more, and all have a seat at the business table of South Africa and beyond its borders..</p>
+
+            </div><!-- Col end -->
+
+            <div class="col-md-6">
+               
+               <div id="page-slider" class="owl-carousel owl-theme page-slider small-bg">
+
+                  <div class="item" style="background-image:url('{% static 'images/slider-pages/slide-page1.jpg' %}')">
+                     <div class="container">
+                        <div class="box-slider-content">
+                           <div class="box-slider-text">
+                              <h2 class="box-slide-title">Leadership</h2>
+                           </div>    
+                        </div>
+                     </div>
+                  </div><!-- Item 1 end -->
+
+                  <div class="item" style="background-image:url('{% static 'images/slider-pages/px.png'%}')">
+                     <div class="container">
+                        <div class="box-slider-content">
+                           <div class="box-slider-text">
+                              <h2 class="box-slide-title">Relationships</h2>
+                           </div>    
+                        </div>
+                     </div>
+                  </div><!-- Item 1 end -->
+
+                  <div class="item" style="background-image:url('{% static 'images/slider-pages/slide-page3.jpg'%}')">
+                     <div class="container">
+                        <div class="box-slider-content">
+                           <div class="box-slider-text">
+                              <h2 class="box-slide-title">Performance</h2>
+                           </div>    
+                        </div>
+                     </div>
+                  </div><!-- Item 1 end -->
+               </div><!-- Page slider end-->          
+            
+
+            </div><!-- Col end -->
+         </div><!-- Content row end -->
+
+      </div><!-- Container end -->
+   </section><!-- Main container end -->
+
+   <section id="facts" class="facts-area dark-bg">
+      <div class="container">
+         <div class="row">
+            <div class="facts-wrapper">
+               <div class="col-sm-3 ts-facts">
+                  <div class="ts-facts-img">
+                     <img src="{% static 'images/icon-image/fact1.png' %}" alt="" />
+                  </div>
+                  <div class="ts-facts-content">
+                     <h2 class="ts-facts-num"><span class="counterUp">1789</span></h2>
+                     <h3 class="ts-facts-title">Total Projects</h3>
+                  </div>
+               </div><!-- Col end -->
+
+               <div class="col-sm-3 ts-facts">
+                  <div class="ts-facts-img">
+                     <img src="{% static 'images/icon-image/fact2.png' %}" alt="" />
+                  </div>
+                  <div class="ts-facts-content">
+                     <h2 class="ts-facts-num"><span class="counterUp">647</span></h2>
+                     <h3 class="ts-facts-title">Staff Members</h3>
+                  </div>
+               </div><!-- Col end -->
+
+               <div class="col-sm-3 ts-facts">
+                  <div class="ts-facts-img">
+                     <img src="{% static 'images/icon-image/fact3.png' %}" alt="" />
+                  </div>
+                  <div class="ts-facts-content">
+                     <h2 class="ts-facts-num"><span class="counterUp">4000</span></h2>
+                     <h3 class="ts-facts-title">Hours of Work</h3>
+                  </div>
+               </div><!-- Col end -->
+
+               <div class="col-sm-3 ts-facts">
+                  <div class="ts-facts-img">
+                     <img src="{% static 'images/icon-image/fact4.png' %}" alt="" />
+                  </div>
+                  <div class="ts-facts-content">
+                     <h2 class="ts-facts-num"><span class="counterUp">44</span></h2>
+                     <h3 class="ts-facts-title">Countries Experience</h3>
+                  </div>
+               </div><!-- Col end -->
+
+            </div> <!-- Facts end -->
+         </div><!--/ Content row end -->
+      </div><!--/ Container end -->
+   </section><!-- Facts end -->
+
+   <section id="ts-team" class="ts-team">
+      <div class="container">
+         <div class="row text-center">
+            <h2 class="section-title">Quality Service</h2>
+            <h3 class="section-sub-title">Professional Team</h3>
+         </div><!--/ Title row end -->
+
+         <div class="row">
+
+            <div id="team-slide" class="owl-carousel owl-theme team-slide">
+               <div class="item">
+                  <div class="ts-team-wrapper">
+                     <div class="team-img-wrapper">
+                        <img alt="" src="{% static 'images/team/team1.jpg' %}" class="img-responsive">
+                     </div>
+                     <div class="ts-team-content">
+                        <h3 class="ts-name">Nats Stenman</h3>
+                        <p class="ts-designation">Chief Operating Officer</p>
+                        <p class="ts-description">Nats Stenman began his career in construction with boots on the ground</p>
+                        <div class="team-social-icons">
+                           <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                           <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                           <a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+                           <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+                        </div><!--/ social-icons-->
+                     </div>
+                  </div><!--/ Team wrapper end -->
+               </div><!-- Team 1 end -->
+
+               <div class="item">
+                  <div class="ts-team-wrapper">
+                     <div class="team-img-wrapper">
+                        <img alt="" src="{% static 'images/team/team2.jpg' %}" class="img-responsive">
+                     </div>
+                     <div class="ts-team-content">
+                        <h3 class="ts-name">Angela Lyouer</h3>
+                        <p class="ts-designation">Innovation Officer</p>
+                        <p class="ts-description">Nats Stenman began his career in construction with boots on the ground</p>
+                        <div class="team-social-icons">
+                           <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                           <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                           <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+                        </div><!--/ social-icons-->
+                     </div>
+                  </div><!--/ Team wrapper end -->
+               </div><!-- Team 2 end -->
+
+               <div class="item">
+                  <div class="ts-team-wrapper">
+                     <div class="team-img-wrapper">
+                        <img alt="" src="{% static 'images/team/team3.jpg' %}" class="img-responsive">
+                     </div>
+                     <div class="ts-team-content">
+                        <h3 class="ts-name">Mark Conter</h3>
+                        <p class="ts-designation">Safety Officer</p>
+                        <p class="ts-description">Nats Stenman began his career in construction with boots on the ground</p>
+                        <div class="team-social-icons">
+                           <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                           <a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+                           <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+                        </div><!--/ social-icons-->
+                     </div>
+                  </div><!--/ Team wrapper end -->
+               </div><!-- Team 3 end -->
+
+               <div class="item">
+                  <div class="ts-team-wrapper">
+                     <div class="team-img-wrapper">
+                        <img alt="" src="{% static 'images/team/team4.jpg' %}" class="img-responsive">
+                     </div>
+                     <div class="ts-team-content">
+                        <h3 class="ts-name">Ayesha Stewart</h3>
+                        <p class="ts-designation">Finance Officer</p>
+                        <p class="ts-description">Nats Stenman began his career in construction with boots on the ground</p>
+                        <div class="team-social-icons">
+                           <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                           <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                           <a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+                           <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+                        </div><!--/ social-icons-->
+                     </div>
+                  </div><!--/ Team wrapper end -->
+               </div><!-- Team 4 end -->
+
+               <div class="item">
+                  <div class="ts-team-wrapper">
+                     <div class="team-img-wrapper">
+                        <img alt="" src="{% static 'images/team/team5.jpg' %}" class="img-responsive">
+                     </div>
+                     <div class="ts-team-content">
+                        <h3 class="ts-name">Dave Clarkte</h3>
+                        <p class="ts-designation">Civil Engineer</p>
+                        <p class="ts-description">Nats Stenman began his career in construction with boots on the ground</p>
+                        <div class="team-social-icons">
+                           <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                           <a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+                           <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+                        </div><!--/ social-icons-->
+                     </div>
+                  </div><!--/ Team wrapper end -->
+               </div><!-- Team 5 end -->
+
+               <div class="item">
+                  <div class="ts-team-wrapper">
+                     <div class="team-img-wrapper">
+                        <img alt="" src="{% static 'images/team/team6.jpg' %}" class="img-responsive">
+                     </div>
+                     <div class="ts-team-content">
+                        <h3 class="ts-name">Elton Joe</h3>
+                        <p class="ts-designation">Site Supervisor</p>
+                        <p class="ts-description">Nats Stenman began his career in construction with boots on the ground</p>
+                        <div class="team-social-icons">
+                           <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                           <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                           <a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+                           <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+                        </div><!--/ social-icons-->
+                     </div>
+                  </div><!--/ Team wrapper end -->
+               </div><!-- Team 6 end -->
+
+            </div><!-- Team slide end -->
+
+         </div><!--/ Content row end -->
+      </div><!--/ Container end -->
+   </section><!--/ Team end -->
+{% endblock content %}	

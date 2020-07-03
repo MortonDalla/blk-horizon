@@ -1,0 +1,89 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+   <div id="banner-area" class="banner-area" style="background-image:url('{% static 'images/banner/pr.jpg' %}')">
+      <div class="banner-text">
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-12">
+                  <div class="banner-heading">
+                     <h1 class="banner-title">Pricing</h1>
+                     <ol class="breadcrumb">
+                        <li>Home</li>
+                        <li>Company</li>
+                        <li><a href="#">Pricing</a></li>
+                     </ol>
+                  </div>
+               </div><!-- Col end -->
+            </div><!-- Row end -->
+         </div><!-- Container end -->
+      </div><!-- Banner text end -->
+   </div><!-- Banner area end --> 
+
+
+  
+   <br><br>
+    <section class="site-section">
+     <div class="container">
+     	<h1>hello</h1>
+        <div class="mb-5">
+        {% for q in query %}
+
+          <div class="row align-items-start job-item border-bottom pb-3 mb-3 pt-3">
+            <div class="col-md-2">
+              {% if q.image %}
+                <a href="{% url 'store:single' q.id %}"><img src="{{q.image.url}}" alt="Image"  width="120" height="120"  class="img-fluid"></a>
+              {% else %}
+                <a href="{% url 'store:single' q.id %}"><img src="{% static 'images/featured-listing-2.jpg' %}" class="img-fluid"></a>
+              {% endif %}
+            </div>
+            <div class="col-md-4">
+              <span class="badge badge-primary px-2 py-1 mb-3">
+
+                    {{ q.employment_status }}
+
+              </span>
+              <h2><a href="{% url 'store:single' q.id %}">{{ q.title }}</a> </h2>
+              <p class="meta"><font color="orange">Publisher:</font> <strong>{{ q.user.first_name }} {{ q.user.last_name }}</strong> In: <strong>{{ q.category }}</strong></p>
+              <time class="date-time-ago" label-morethentime="Older than 3 months" data-morethenold="3" label-prefix="" datetime="2020-05-23T11:01:03Z" data-date="2020-05-23T11:01:03Z"><font color="orange">Published On:</font> {{ q.published_on }}</time>
+              <h6><font color="orange"> Salary:</font> {{ q.Salary }}
+            </div>
+            <div class="col-md-3 text-left">
+              <h3><span class="m-2"><span class="icon-room mr-2"></span>{{ q.job_location }}</span></h3>
+              <span class="meta">{{ q.province }}</span>
+            </div>
+            <div class="col-md-3 text-md-right">
+              <strong class="text-black">{{ q.Salary }}</strong>
+            </div>
+          </div>
+
+        {% endfor %}
+        </div>
+
+
+
+        <div class="row pagination-wrap">
+
+          <div class="col-md-6 text-center text-md-left">
+            <div class="custom-pagination ml-auto">
+              {% if query.has_previous %}
+              <a  href="?page={{ query.previous_page_number }}" class="prev">Previous</a>
+              {% endif %}
+              <div class="d-inline-block">
+                Page <a href="#" class="active">{{ query.number }}</a> of  {{ query.paginator.num_pages }}
+
+
+              </div>
+              {% if query.has_next %}
+              <a href="?page={{ query.next_page_number }}" class="next">Next</a>
+               {% endif %}
+
+            </div>
+          </div>
+        </div>
+      </div>
+	</section>
+
+
+{% endblock content %}	
